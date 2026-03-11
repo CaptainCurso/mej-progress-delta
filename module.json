@@ -29,5 +29,8 @@
         }
       }
     ]
-  }
+  },
+  "url": "https://github.com/CaptainCurso/mej-progress-delta",
+  "manifest": "https://raw.githubusercontent.com/CaptainCurso/mej-progress-delta/main/module.json",
+  "download": "https://github.com/CaptainCurso/mej-progress-delta/releases/download/v1.0.0/mej-progress-delta-v1.0.0.zip"
 }

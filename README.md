@@ -63,6 +63,40 @@ Typical GitHub flow:
 4. Update `module.json` with the GitHub repository, manifest, and zip URLs.
 5. Paste the hosted `manifest` URL into Foundry's `Install Module` dialog.
 
+## GitHub Distribution Workflow
+
+Earlier Foundry projects in this workspace use the same GitHub pattern:
+
+- add a GitHub `origin` remote
+- prepare `module.json` with public `url`, `manifest`, and `download` fields
+- build a release zip with the module files at the archive root
+- publish a GitHub release asset with `gh`
+
+This repo now includes the same helper scripts:
+
+- [`package.json`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/package.json)
+- [`scripts/release/prepare-foundry-module.mjs`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/scripts/release/prepare-foundry-module.mjs)
+- [`scripts/release/publish-github-release.mjs`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/scripts/release/publish-github-release.mjs)
+- [`docs/foundry_remote_install.md`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/docs/foundry_remote_install.md)
+
+### Add GitHub remote
+
+If this repo does not yet have a GitHub remote, add one after you create the repository:
+
+```bash
+git remote add origin https://github.com/<you>/<repo>.git
+git push -u origin main
+```
+
+Command explanation:
+
+- `git remote add origin ...` stores the GitHub repository URL under the name `origin`.
+- `git push -u origin main` pushes the local `main` branch and remembers that remote branch as the default upstream.
+
+Risk:
+
+- If `origin` already exists, `git remote add` will fail instead of replacing it.
+
 ## How To Use It
 
 1. Open a Progress list entry as an owner or GM.
@@ -94,3 +128,4 @@ Invalid input is rejected with a Foundry notification. These values are invalid:
 - [`scripts/mej-progress-delta.js`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/scripts/mej-progress-delta.js)
 - [`styles/mej-progress-delta.css`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/styles/mej-progress-delta.css)
 - [`DEVELOPER-NOTE.md`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/DEVELOPER-NOTE.md)
+- [`docs/foundry_remote_install.md`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/docs/foundry_remote_install.md)

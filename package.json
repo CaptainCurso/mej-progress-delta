@@ -1,0 +1,10 @@
+{
+  "name": "mej-progress-delta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Release helpers for the MEJ Progress Delta Foundry module.",
+  "scripts": {
+    "module:prepare-release": "node scripts/release/prepare-foundry-module.mjs",
+    "module:publish-release": "node scripts/release/publish-github-release.mjs"
+  }
+}

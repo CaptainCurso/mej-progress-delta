@@ -54,3 +54,18 @@ Persistence uses the same update flow Monk's `ListSheet.onUpdateProgress` method
 - [`module.json`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/module.json)
 - [`scripts/mej-progress-delta.js`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/scripts/mej-progress-delta.js)
 - [`styles/mej-progress-delta.css`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/styles/mej-progress-delta.css)
+
+## GitHub Release Tooling
+
+This repo now follows the same GitHub release pattern used by other Foundry projects in this workspace:
+
+- prepare `module.json` with public `url`, `manifest`, and `download` fields
+- build a release zip in `dist/module-release/`
+- publish the zip to a GitHub release with `gh`
+
+Files added for that workflow:
+
+- [`package.json`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/package.json)
+- [`scripts/release/prepare-foundry-module.mjs`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/scripts/release/prepare-foundry-module.mjs)
+- [`scripts/release/publish-github-release.mjs`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/scripts/release/publish-github-release.mjs)
+- [`docs/foundry_remote_install.md`](/Users/nicholasmcdowell/Documents/Codex Projects/Progress List Delta/docs/foundry_remote_install.md)
