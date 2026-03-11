@@ -1,0 +1,33 @@
+{
+  "id": "mej-progress-delta",
+  "title": "MEJ Progress Delta",
+  "description": "Replaces Monk's Enhanced Journal Progress list +/- buttons with a signed delta input and Apply button.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Codex"
+    }
+  ],
+  "esmodules": [
+    "scripts/mej-progress-delta.js"
+  ],
+  "styles": [
+    "styles/mej-progress-delta.css"
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "monks-enhanced-journal",
+        "type": "module",
+        "compatibility": {
+          "minimum": "13.06",
+          "verified": "13.06"
+        }
+      }
+    ]
+  }
+}

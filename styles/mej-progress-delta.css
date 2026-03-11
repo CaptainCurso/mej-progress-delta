@@ -1,0 +1,27 @@
+.monks-journal-sheet.list .list-list .progress-container.mej-progress-delta {
+  align-items: center;
+  gap: 4px;
+}
+
+.monks-journal-sheet.list .list-list .progress-container.mej-progress-delta .progress {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.monks-journal-sheet.list .list-list .mej-progress-delta-input {
+  flex: 0 0 74px;
+  width: 74px;
+  height: 25px;
+  padding: 0 6px;
+  text-align: right;
+  font: inherit;
+}
+
+.monks-journal-sheet.list .list-list .mej-progress-delta-apply {
+  flex: 0 0 auto;
+  min-width: 52px;
+  height: 25px;
+  line-height: 23px;
+  padding: 0 8px;
+  font-size: 12px;
+}
